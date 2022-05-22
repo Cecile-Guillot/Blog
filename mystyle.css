@@ -6,18 +6,49 @@ html{
     font-size:16px;
 }
 
+/*Customization of the navbar and the banner*/
+
 .menu{
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-around;
+    align-content: center;
 }
+
+a:link{
+    font-family: "Montserrat", sans-serif;
+    font-color:#9f9f9f;
+    text-decoration: none;
+}
+
+a:visited{
+    font-family: "Montserrat", sans-serif;
+    font-color:#9f9f9f;
+}
+
+a:hover{
+    font-family: "Montserrat", sans-serif;
+    font-color: black;
+}
+
+a:active{
+    font-family: "Montserrat", sans-serif;
+    font-color:#9f9f9f;
+}
+
 
 .social-network{
     display:flex;
     justify-content: flex-end;
 }
+
+.banner{
+
+}
+
+/*Customization of article*/
 
 h2{
     font-family: 'Cardo', serif;
