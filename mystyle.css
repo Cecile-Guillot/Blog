@@ -6,6 +6,19 @@ html{
     font-size:16px;
 }
 
+.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-network{
+    display:flex;
+    justify-content: flex-end;
+}
+
 h2{
     font-family: 'Cardo', serif;
     font-size: 36px;
@@ -17,7 +30,7 @@ h3{
     color: #9f9f9f;
 }
 
-#date{
+.date{
     font-family: 'Montserrat', sans-serif;
     font-size:17px;
     color: #00000090;
