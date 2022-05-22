@@ -35,10 +35,11 @@ a:active{
     font-color:#9f9f9f;
 }
 
-
 .banner{
+    width: 100%;
+    height: auto;
+  }
 
-}
 
 /*Customization of article*/
 
@@ -53,9 +54,36 @@ h3{
     color: #9f9f9f;
 }
 
+.article{
+    font-family: 'Montserrat', sans-serif;
+    float:left;
+    width:55%
+}
+
 .date{
     font-family: 'Montserrat', sans-serif;
     font-size:17px;
     color: #00000090;
+}
 
+.character{
+    width:20%;
+}
+
+
+/*Sidebar*/
+
+.sidebar{
+    width:20%;
+    float:right;
+}
+
+.menu-sidebar{
+    list-style-type: none;
+    display:flex;
+    flex-direction: column;
+}
+
+.firstpart{
+    border-bottom:2px solid #9f9f9f50;
 }
