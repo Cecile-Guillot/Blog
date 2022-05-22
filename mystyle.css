@@ -10,11 +10,8 @@ html{
 
 .menu{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: space-around;
-    align-content: center;
+    justify-content: space-evenly;
 }
 
 a:link{
@@ -38,11 +35,6 @@ a:active{
     font-color:#9f9f9f;
 }
 
-
-.social-network{
-    display:flex;
-    justify-content: flex-end;
-}
 
 .banner{
 
