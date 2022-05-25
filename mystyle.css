@@ -1,89 +1,187 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+* {
+    box-sizing: border-box;
+}
 
-html{
+
+body, html{
     font-size:16px;
+    font-family: "Montserrat", sans-serif;
+    color: rgba(0, 0, 0, .87);
+    line-height:1.6;
+    margin: 0;
+    font-weight: 500;
 }
 
 /*Customization of the navbar and the banner*/
 
-.menu{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
+.topbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width:100%;
+    background-color: white;
+    padding: 30px;
+    z-score: 3;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .5);
 }
 
-a:link{
-    font-family: "Montserrat", sans-serif;
-    font-color:#9f9f9f;
+.topbar nav{
+    float: left;
+}
+
+.topbar nav a{
+    color: #9F9F9F;
     text-decoration: none;
+    font-weight: 500;
+    margin: 0 53px;
+
 }
 
-a:visited{
-    font-family: "Montserrat", sans-serif;
-    font-color:#9f9f9f;
+.topbar nav a:hover, .topbar nav a.active{
+    color:#000;
 }
 
-a:hover{
-    font-family: "Montserrat", sans-serif;
-    font-color: black;
-}
-
-a:active{
-    font-family: "Montserrat", sans-serif;
-    font-color:#9f9f9f;
-}
-
-.banner{
-    width: 100%;
-    height: auto;
-  }
-
-
-/*Customization of article*/
-
-h2{
-    font-family: 'Cardo', serif;
-    font-size: 36px;
-}
-
-h3{
-    font-family: 'Montserrat', sans-serif;
-    font-size:17px;
-    color: #9f9f9f;
-}
-
-.article{
-    font-family: 'Montserrat', sans-serif;
-    float:left;
-    width:55%
-}
-
-.date{
-    font-family: 'Montserrat', sans-serif;
-    font-size:17px;
-    color: #00000090;
-}
-
-.character{
-    width:20%;
-}
-
-
-/*Sidebar*/
-
-.sidebar{
-    width:20%;
+.social{
     float:right;
 }
 
-.menu-sidebar{
-    list-style-type: none;
-    display:flex;
-    flex-direction: column;
+.social a{
+    padding:0 12px;
+    opacity: .5;
 }
 
-.firstpart{
-    border-bottom:2px solid #9f9f9f50;
+.social a:hover {
+    opacity: 1;
+}
+
+.banner{
+    height:427px;
+    background: no-repeat center center/cover url(img/banner.jpg);
+}
+
+/*MAIN*/
+
+.body{
+    display:flex;
+    align-items: stretch;
+}
+
+.main{
+    background-color: white;
+    width:calc(100% - 375px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .5);
+    position: relative;
+    z-index: 2;
+}
+
+/* SIDEBAR*/
+
+.sidebar{
+    width: 375px;
+    padding: 40px;
+    font-size: 17px;
+    background-color: #FBFBFB;
+    position: relative;
+    z-index: 1;
+}
+
+.sidebar-title{
+    font-size: 30px;
+    color: black;
+    margin: 15px 0;
+}
+
+.sidebar-title:first-child{
+    margin-top:0;
+}
+
+.sidebar a{
+    color: #9F9F9F;
+    text-decoration: none;
+}
+
+.sidebar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar li:first-child{
+    padding-top: 0;
+}
+
+.sidebar li:last-child{
+    padding-top: 0;
+}
+
+.sidebar il{
+    padding: 6px 0;
+}
+
+.sidebar a:hover{
+    text-decoration: underline;
+}
+
+.sidebar hr{
+    border : none;
+    height: 1px;
+    background: #C4C4C4;
+    margin: 50px 0;
+}
+
+/* ARTICLE*/
+
+.article{
+    position: relative;
+    overflow: hidden;
+    margin: 50px auto;
+    padding-left: 333px;
+    min-height: 203px;
+    max-width: 940px;
+}
+
+.article a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.article a:hover{
+    text-decoration: underline;
+}
+
+.article-image{
+    position: absolute;
+    left: 0;
+    right: 0;
+    float:left;
+    width:308px;
+    margin-right: 25px; 
+}
+
+.article-image img { 
+    width:100%;
+    height:auto;
+}
+
+.article-date{
+    font-weight: 300px;
+    color: rgba(0, 0, 0, .6);
+    margin-bottom: 5px;
+}
+
+.article-title{
+    font-family: "Cardo", serif;
+    font-size: 2.25rem;
+    line-height: 1.1;
+    margin : 0 0 15px 0;
+}
+
+/*FOOTER*/
+
+.footer{
+    clear:both;
 }

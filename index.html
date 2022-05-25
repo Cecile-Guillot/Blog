@@ -1,75 +1,84 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="mystyle.css">
+        <title>Mon Blog</title>
     </head>
-
-    <header>
-        <nav class="navbar">
-            <ul class="menu">
-                <li><a href="accueil.html">Accueil</a></li>
-                <li><a href="articles.html">Articles</a></li>
-                <li><a href="apropos.html">A propos</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="facebook.com"><img src="images/Facebook.svg" alt="facebook_logo"></a></li>
-                <li><a href="twitter.com"><img src="images/twitter.svg" alt="twitter_logo"></a></li>
-            </ul>
-        </nav>
-        <img class="banner" src="images/banner.jpg" alt="banner_website">
-    </header>
-
     <body>
-        <div class="container">
-            <span class="sidebar">
-                <div class="firstpart">
-                <h3>Catégories</h3>
-                <ul class="menu-sidebar">
-                    <li>High-Tech</li>
-                    <li>Concentré du Web</li>
-                    <li>A propos</li>
-                    <li>Astuces pour développeurs</li>
-                    <li>Ressources</li>
-                    <li>Bonnes pratiques</li>
-                </ul>
+    <header class="topbar">
+        <nav class="navbar">
+            <a href="index.html">Accueil</a>
+            <a href="#" class="active">Articles</a>
+            <a href="#">A propos</a>
+            <a href="#">Contact</a>
+        </nav>
+            <div class="social">
+                <a href="facebook.com"><img src="img/Facebook.svg" title="facebook"></a></li>
+                <a href="twitter.com"><img src="img/twitter.svg" title="twitter"></a></li>
             </div>
-                <h3>Catégories</h3>
-                <ul class="menu-sidebar">
-                    <li>High-Tech</li>
-                    <li>Concentré du Web</li>
-                    <li>A propos</li>
-                    <li>Astuces pour développeurs</li>
-                    <li>Ressources</li>
-                    <li>Bonnes pratiques</li>
-                </ul>
-            </span>
-            <div>
-                <div class="article">
-                    <img class="character" src="images/img.svg">
-                    <p class="date">Publié le 21 mai 2022</p>
-                    <h2>Le statut de Freelance</h2>
-                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit scelerisque arcu, ac consequat neque ultrices nec. Sed eleifend nisi arcu, et viverra nibh aliquam et. Maecenas in arcu lacus. Praesent fermentum placerat justo non ultrices. Maecenas malesuada, libero sit amet sollicitudin mollis, arcu tellus porttitor eros, a faucibus ex neque rutrum sapien. Praesent justo erat, iaculis eget eros a, aliquet posuere leo. Mauris eget rhoncus ex. Proin cursus, tortor vel porta volutpat, diam mi pharetra est, sed volutpat purus orci at magna. Phasellus ut nunc id mi ornare cursus a ut lorem. Sed cursus bibendum ligula, nec ullamcorper magna. </p>
-                </div>
-                <div class="article">
-                    <img class="character" src="images/img.svg">
-                    <p class="date">Publié le 21 mai 2022</p>
-                    <h2>Le statut de Freelance</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit scelerisque arcu, ac consequat neque ultrices nec. Sed eleifend nisi arcu, et viverra nibh aliquam et. Maecenas in arcu lacus. Praesent fermentum placerat justo non ultrices. Maecenas malesuada, libero sit amet sollicitudin mollis, arcu tellus porttitor eros, a faucibus ex neque rutrum sapien. Praesent justo erat, iaculis eget eros a, aliquet posuere leo. Mauris eget rhoncus ex. Proin cursus, tortor vel porta volutpat, diam mi pharetra est, sed volutpat purus orci at magna. Phasellus ut nunc id mi ornare cursus a ut lorem. Sed cursus bibendum ligula, nec ullamcorper magna. </p>
-                </div>
-                <div class="article">
-                    <img class="character" src="images/img.svg">
-                    <p class="date">Publié le 21 mai 2022</p>
-                    <h2>Le statut de Freelance</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit scelerisque arcu, ac consequat neque ultrices nec. Sed eleifend nisi arcu, et viverra nibh aliquam et. Maecenas in arcu lacus. Praesent fermentum placerat justo non ultrices. Maecenas malesuada, libero sit amet sollicitudin mollis, arcu tellus porttitor eros, a faucibus ex neque rutrum sapien. Praesent justo erat, iaculis eget eros a, aliquet posuere leo. Mauris eget rhoncus ex. Proin cursus, tortor vel porta volutpat, diam mi pharetra est, sed volutpat purus orci at magna. Phasellus ut nunc id mi ornare cursus a ut lorem. Sed cursus bibendum ligula, nec ullamcorper magna. </p>
-                </div>
-                <div class="article">
-                    <img class="character" src="images/img.svg">
-                    <p class="date">Publié le 21 mai 2022</p>
-                    <h2>Le statut de Freelance</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit scelerisque arcu, ac consequat neque ultrices nec. Sed eleifend nisi arcu, et viverra nibh aliquam et. Maecenas in arcu lacus. Praesent fermentum placerat justo non ultrices. Maecenas malesuada, libero sit amet sollicitudin mollis, arcu tellus porttitor eros, a faucibus ex neque rutrum sapien. Praesent justo erat, iaculis eget eros a, aliquet posuere leo. Mauris eget rhoncus ex. Proin cursus, tortor vel porta volutpat, diam mi pharetra est, sed volutpat purus orci at magna. Phasellus ut nunc id mi ornare cursus a ut lorem. Sed cursus bibendum ligula, nec ullamcorper magna. </p>
-                </div>
-            </div>
+        </header>
+        <div class="banner"></div>
+        <div class="body">
+        <main>    
+            <article class="article">
+                <a href="#" class="article-image"><img src="img/article.svg"></a>
+                <div class="article-date">Publié le 14 juin 2018</div>
+                <a href="#"><h2 class="article-title">Le statut de Freelance</h2></a>
+                <p>
+                    Dans un précédent podcast on s'était intéressé au métier de développeur web de manière générale mais aujourd'hui je voulais me focaliser sur le statut de freelance en particulier. Plutôt que de faire une longue explication sur le statut, mon expér...
+                </p>
+            </article>
+            <article class="article">
+                <a href="#" class="article-image"><img src="img/article.svg"></a>
+                <div class="article-date">Publié le 14 juin 2018</div>
+                <a href="#"><h2 class="article-title">Le statut de Freelance</h2></a>
+                <p>
+                    Dans un précédent podcast on s'était intéressé au métier de développeur web de manière générale mais aujourd'hui je voulais me focaliser sur le statut de freelance en particulier. Plutôt que de faire une longue explication sur le statut, mon expér...
+                </p>
+            </article>
+            <article class="article">
+                <a href="#" class="article-image"><img src="img/article.svg"></a>
+                <div class="article-date">Publié le 14 juin 2018</div>
+                <a href="#"><h2 class="article-title">Le statut de Freelance</h2></a>
+                <p>
+                    Dans un précédent podcast on s'était intéressé au métier de développeur web de manière générale mais aujourd'hui je voulais me focaliser sur le statut de freelance en particulier. Plutôt que de faire une longue explication sur le statut, mon expér...
+                </p>
+            </article>
+            <article class="article">
+                <a href="#" class="article-image"><img src="img/article.svg"></a>
+                <div class="article-date">Publié le 14 juin 2018</div>
+                <a href="#"><h2 class="article-title">Le statut de Freelance</h2></a>
+                <p>
+                    Dans un précédent podcast on s'était intéressé au métier de développeur web de manière générale mais aujourd'hui je voulais me focaliser sur le statut de freelance en particulier. Plutôt que de faire une longue explication sur le statut, mon expér...
+                </p>
+            </article>
+        </main>
+        <aside class="sidebar">
+            <h4 class="sidebar-title">Catégories</h4>
+            <ul>
+                <li><a href="#">High-Tech</a></li>
+                <li><a href="#">Concentré du Web</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Astuces pour développeurs</a></li>
+                <li><a href="#">Ressources</a></li>
+                <li><a href="#">Bonnes pratiques</a></li>
+            </ul>
+            <hr>
+            <h4 class="sidebar-title">Catégories</h4>
+            <ul>
+                <li><a href="#">High-Tech</a></li>
+                <li><a href="#">Concentré du Web</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Astuces pour développeurs</a></li>
+                <li><a href="#">Ressources</a></li>
+                <li><a href="#">Bonnes pratiques</a></li>
+            </ul>
+        </aside>
         </div>
+        <footer class="footer">
+            Crée par Cécile
+        </footer>
     </body>
 </html>
