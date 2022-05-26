@@ -183,3 +183,60 @@ body, html{
 .footer{
     clear:both;
 }
+
+/*Media Query*/
+
+@media only screen and (max-width: 1100px){
+
+    .body{
+        display:block;
+    }
+    .main{
+        width: 100%;
+    }
+
+    .main .container{
+        overflow: hidden;
+    }
+
+    .sidebar{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width: 740px){
+
+    .article{
+        padding-left: 0;
+    }
+
+    .article-image{
+        position: static;
+        margin-bottom: 1rem;
+        width: 100%;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 860px){
+
+    .topbar{
+        position: absolute;
+    }
+
+    .topbar nav, .social{
+        float: none;
+        text-align: center;
+    }
+
+    .topbar a{
+        margin-bottom: 15px;
+    }
+
+    .topbar nav a{
+        margin: 0 20px 5px 20px;
+        white-space: nowrap;
+        display:inline-block;
+    }
+
+}
